@@ -1,0 +1,259 @@
+/* static/src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.left{
+    width: 25vw;
+}
+.right{
+    width: 75vw;
+}
+.menu-list li a img {
+    width: 30px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menu-list li img {
+    width: 30px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.menu-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.menu-list li a{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Ensure link inherits text color */
+}
+
+.invert{
+    filter:invert(1);
+}
+.bg-grey{
+    background-color: #121212;
+}
+.bg-black{
+    background-color: black;
+    color: aliceblue;
+}
+
+.left-column {
+    width: 25vw;
+    padding: 10px; /* Adjust margin between columns */
+  }
+
+.right-column {
+    width: 75vw;
+    position:relative;
+}
+.heading{
+    width: 100%;
+    display:flex;
+    gap: 15px;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+.heading img{
+    width: 30px;
+}
+.library{
+    min-height: 80vh;
+}
+.footer {
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    gap: 6px;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(35, 35, 35);
+}
+.nav img{
+    width: 13px;
+}
+.header > *{
+    padding: 20px;
+}
+.nilou-playlist{
+    padding: 16px;
+    background-color: rgb(34, 34, 34);
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin:30px;
+    overflow:scroll;
+    max-height:70vh;
+}
+
+.card{
+    width: 200px;
+    padding: 30px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color:#252525;
+    position:relative;
+    margin:10px;
+}
+
+.card > *{
+    padding-top: 10px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.play-button{
+    width: 28px;
+    height:28px;
+    background-color:#1fdf64;
+    border-radius:50%;
+    border: 2px solid #000;
+    padding:4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:168px;
+    right:17px;
+}
+.playbar{
+    position:absolute;
+    bottom:0;
+    filter:invert(1);
+    background:#dad5d5;
+    border-radius:10px;
+    width:87%;
+    padding:12px;
+    width:71vw;
+    height:41px;
+}
+.songbuttons{
+    display:flex;
+    justify-content:center;
+    gap:17px;
+}
+.songbuttons img{
+    width:17px;
+    border-radius:100%;
+    filter:invert(1);
+}
+
+.songList {
+    height: 544px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+.songList ul {
+    padding: 0 12px;
+}
+
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid rgba(146, 143, 143, 0.491);
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+.seekbar{
+    height:2px;
+    width:97%;
+    background:black;
+    position:relative;
+    bottom:-6px;
+    border-radius:12px;
+    margin:6px;
+}
+.circle{
+    width:13px;
+    height:13px;
+    border-radius:13px;
+    background-color:black;
+    position:relative;
+    bottom:6px;
+    left:0%;
+    transition: left 0.4s;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.pause-btn{
+    width: 28px;
+    height:28px;
+    background-color:#1fdf64;
+    border-radius:50%;
+    border: 2px solid #000;
+    padding:4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    top:168px;
+    right:17px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilou music</title>
+    <link rel="shortcut icon" type="image/svg" href="assets/photos/nilou.svg">
+    <link rel="stylesheet" href="static/dist/css/output.css">
+    <link rel="stylesheet" href="static/dist/css/output1.css">
+</head>
+<body>
+    <div class="container flex bg-black">
+        <div class="left-column bg-grey">
+            <div class="close">
+                <img class="invert" src="assets/photos/close.svg" alt="close">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <a href="#home" style="text-decoration: none;">
+                        <img src="assets/photos/nilou.svg" alt="nilou">Nilou
+                    </a>
+                </div>
+                <ul class="menu-list">
+                    <li><a href="#home" style="text-decoration: none;">
+                        <img src="assets/photos/home.png" alt="home">Home
+                    </a></li>
+                    <li>
+                        <a href="#search" style="text-decoration: none;">
+                            <img src="assets/photos/search.png" alt="search">Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading" onclick="toggleSongList(this)">
+                    <img src="assets/photos/stack.png" alt="he">
+                    <h2>Your library</h2>
+                </div>
+                <div class="songList">
+                    <!-- Replace with actual song data -->
+                    <ul>
+                        
+                    </ul>
+                    <!-- Repeat for other songs -->
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+            </div>
+        </div>
+        <div class="right-column bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img class="hamburger invert" src="assets/photos/icons8-hamburger.gif" alt="hamburger">
+                        <img src="assets/photos/left_arrow.png" alt="left">
+                        <img src="assets/photos/right_arrow.png" alt="right">
+                    </div>    
+                </div>
+                <div class="buttons">
+                    <a type="button" class="btn" href="register.html">Signup</a>
+                    <a type="button" class="btn" href="login.html">Login</a>
+                </div>
+            </div>
+            <div class="nilou-playlist">
+                <h1>Nilou Music Playlist</h1>
+                <div class="cardContainer">                    
+                </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+                    
+                    </div>
+                    <div class="songbuttons">
+                        <img width="35" id="previous" src="assets/photos/prev.png" alt="">
+                        <img width="35" id="play" src="assets/photos/play.png" alt="">
+                        <img width="35" id="next" src="assets/photos/next.png" alt="">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime">
+                        
+                        </div>
+                        <div class="volume">
+                            <img src="assets/photos/volume.png" alt="volume">
+                            <div class="range">
+                                <input type="range" name="volume" id="rangevolume">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
